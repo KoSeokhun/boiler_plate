@@ -9,5 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "IYABA",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6"
+  }
 }
