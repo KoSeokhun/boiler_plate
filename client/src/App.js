@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  // Linkkkk
+  // Link
 } from "react-router-dom";
 
 import LandingPage from './components/views/LandingPage/LandingPage';
