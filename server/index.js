@@ -83,7 +83,7 @@ app.post('/api/users/login', (req, res) => {
   })
 })
 
-app.get('/api/users/auth', (req, res) => {
+app.get('/api/users/auth', auth, (req, res) => {
   res.status(200).json({
     _id: req.user._id,
     idAdmin: req.user.role === 0 ? false : true,
