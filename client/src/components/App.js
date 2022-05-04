@@ -1,4 +1,3 @@
-import './App.css';
 import React, { Suspense } from 'react';
 
 import {
@@ -8,13 +7,13 @@ import {
   // Link
 } from "react-router-dom";
 
-import LandingPage from './components/views/LandingPage/LandingPage';
-import LoginPage from './components/views/LoginPage/LoginPage';
-import RegisterPage from './components/views/RegisterPage/RegisterPage';
-import NavBar from './components/views/NavBar/NavBar';
-import Footer from './components/views/Footer/Footer';
-import MovieDetail from './components/views/MovieDetail/MovieDetail';
-import FavoritePage from './components/views/FavoritePage/FavoritePage';
+import LandingPage from './views/LandingPage/LandingPage';
+import LoginPage from './views/LoginPage/LoginPage';
+import RegisterPage from './views/RegisterPage/RegisterPage';
+import NavBar from './views/NavBar/NavBar';
+import Footer from './views/Footer/Footer';
+import MovieDetail from './views/MovieDetail/MovieDetail';
+import FavoritePage from './views/FavoritePage/FavoritePage';
 
 function App() {
   return (

@@ -11,8 +11,9 @@ function RightMenu(props) {
     const user = useSelector(state => state.user)
 
     const logoutHandler = () => {
-        axios.get(`${USER_SERVER}/logout`).then(response => {
+        axios.get(`/${USER_SERVER}logout`).then(response => {
             if (response.status === 200) {
+                window.localStorage.removeItem('userId');
                 navigate("/login");
             } else {
                 alert('Log Out Failed')

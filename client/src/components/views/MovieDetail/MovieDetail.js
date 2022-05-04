@@ -6,7 +6,7 @@ import MainImage from '../commons/MainImage';
 import { API_URL, API_KEY, IMAGE_BASE_URL } from '../../Config';
 import MovieInfo from './Sections/MovieInfo';
 import GridCards from '../commons/GridCards';
-import { Row } from 'antd';
+import { Button, Row } from 'antd';
 import FavoriteButton from './Sections/FavoriteButton';
 
 function MovieDetail(props) {
@@ -54,9 +54,10 @@ function MovieDetail(props) {
                 <div style={{ width: '85%', margin: '1rem auto' }}>
 
                     <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-
-                        <FavoriteButton movieInfo={movie} movieId={movieId} userFrom={localStorage.getItem('userId')} />
-
+                        {localStorage.getItem('userId')
+                            ? <FavoriteButton movieInfo={movie} movieId={movieId} userFrom={localStorage.getItem('userId')} />
+                            : <Button disabled>좋아요</Button>
+                        }
                     </div>
 
                     {/* Movie Info */}
