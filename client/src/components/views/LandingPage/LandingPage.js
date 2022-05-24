@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom';
 
 function LandingPage() {
     const navigate = useNavigate();
-
     const [movies, setMovies] = useState([]);
     const [mainMovieImage, setMainMovieImage] = useState(null);
     const [currentPage, setCurrentPage] = useState(0);

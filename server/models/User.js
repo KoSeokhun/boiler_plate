@@ -8,10 +8,6 @@ const userSchema = mongoose.Schema({
         type: String,
         maxlength: 50
     },
-    lastName: {
-        type: String,
-        maxlength: 50
-    },
     email: {
         type: String,
         trim: true,
@@ -21,7 +17,7 @@ const userSchema = mongoose.Schema({
         type: String,
         minlength: 5
     },
-    lastname: {
+    lastName: {
         type: String,
         maxlength: 50
     },
